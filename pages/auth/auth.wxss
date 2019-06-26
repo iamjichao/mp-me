@@ -1,0 +1,36 @@
+/**auth.wxss**/
+page {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  padding: 0;
+}
+
+.button-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  width: 400rpx;
+  height: 100rpx;
+  margin-bottom: 100rpx;
+  background-color: #19aad1;
+  font-size: 36rpx;
+  color: #fff;
+  line-height: 100rpx;
+  border: none;
+  border-radius: 100rpx;
+}
+
+.button-hover {
+  background-color: #19aad1;
+  font-size: 36rpx;
+  color: #fff;
+  border: none;
+  opacity: 0.8;
+}

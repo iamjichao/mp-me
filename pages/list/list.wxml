@@ -1,0 +1,23 @@
+<!--list.wxml-->
+<view class="container">
+  <view class="list-container">
+    <navigator url="../plan/plan?id={{plan.id}}" wx:for="{{planList}}" wx:for-index="index" wx:for-item="plan" wx:key="{{index}}">
+      <view class="list-item">
+        <view>{{plan.title}}</view>
+        <view>倒计时<text style="color:{{plan.numColor}}">{{plan.remainDay}}</text>天</view>
+      </view>
+    </navigator>
+    <navigator url="../index/index">
+      <view class="list-item-me">
+        <view><image src="{{userInfo.avatarUrl}}"></image></view>
+        <view wx:if="{{!haveBirthday}}">查看生日信息</view>
+        <view wx:elif="{{haveBirthday}}">我的第<text>{{num1}}</text>天</view>
+      </view>
+    </navigator>
+  </view>
+  <navigator url="../addPlan/addPlan">
+    <view class="add-plan-btn">
+      <image src="../../assets/add.png"></image>
+    </view>
+  </navigator>
+</view>

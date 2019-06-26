@@ -1,0 +1,112 @@
+/**index.wxss**/
+page {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  padding: 0;
+}
+
+.userinfo {
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-end;
+  margin-right: 20rpx; */
+  margin-left: 20rpx;
+}
+
+.userinfo-avatar {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 20rpx 20rpx 20rpx 0;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  font-size: 36rpx;
+  color: #19aad1;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-item:nth-child(2), .swiper-item:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-container {
+  padding: 20rpx 40rpx;
+}
+
+.past {
+  font-size: 36rpx;
+  color: #333;
+  margin: 20rpx;
+  display: flex;
+  align-items: center;
+  /* text-align: right; */
+}
+
+.birth image {
+  display: block;
+  width: 38rpx;
+  height: 38rpx;
+  margin-left: 2rpx;
+}
+
+.birth .birth1 {
+  margin-left: 18rpx;
+  margin-right: 22rpx;
+}
+
+.birth .birth2 {
+  font-size: 30rpx;
+  color: #19aad1;
+}
+
+.past-number {
+  background: #fff;
+  margin-top: 40rpx;
+  padding: 10rpx 0;
+  border-radius: 20rpx;
+  font-size: 60rpx;
+  color: #333;
+}
+
+.num {
+  display: flex;
+  margin: 40rpx 0;
+}
+
+.num-l {
+  flex: 1;
+  text-align: right;
+  margin-right: 20rpx;
+  color: #19aad1;
+  font-weight: bolder;
+}
+
+.num-r {
+  width: 180rpx;
+}
+
+.progress {
+  padding: 40rpx 0;
+  font-size: 36rpx;
+  color: #333;
+}
+
+.progress progress {
+  margin-top: 20rpx;
+}
+
+.progress:nth-child(3) {
+  font-size: 40rpx;
+  margin: 40rpx 0 200rpx;
+}

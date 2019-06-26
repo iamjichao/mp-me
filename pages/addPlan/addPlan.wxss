@@ -1,0 +1,46 @@
+/**addPlan.wxss**/
+page {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  padding: 0 40rpx;
+  background: #fff;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.form-item {
+  padding-top: 60rpx;
+  font-size: 32rpx;
+}
+
+.form-item-t {
+  font-weight: bolder;
+}
+
+input, .picker {
+  height: 74rpx;
+  line-height: 74rpx;
+  border-radius: 10rpx;
+  margin-top: 16rpx;
+  padding: 0 20rpx;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  width: 96%;
+  height: 150rpx;
+  border-radius: 10rpx;
+  margin-top: 16rpx;
+  padding: 10rpx 2%;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #19aad1;
+  border-color: #19aad1;
+  color: #fff;
+}

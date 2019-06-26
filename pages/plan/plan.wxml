@@ -1,0 +1,37 @@
+<!--plan.wxml-->
+<view class="container">
+  <view class="item-container">
+    <view class="past" style="margin-bottom:40rpx;font-size:40rpx;font-weight:bolder;">{{curPlan.title}}</view>
+    <view class="past">
+      <image src="../../assets/deadline.png"></image>
+      <text>{{curPlan.deadline}}</text>
+    </view>
+    <view class="past" wx:if="{{curPlan.remark}}">
+      <image src="../../assets/remark.png"></image>
+      <text>{{curPlan.remark}}</text>
+    </view>
+    <view class="past">
+      <image src="../../assets/count.png"></image>
+      <text>倒计时</text>
+    </view>
+    <view class="past-number">
+      <view class="num num1">
+        <view class="num-l">{{num1}}</view>
+        <view class="num-r">天</view>
+      </view>
+      <view class="num num2">
+        <view class="num-l">{{num2}}</view>
+        <view class="num-r">小时</view>
+      </view>
+      <view class="num num3">
+        <view class="num-l">{{num3}}</view>
+        <view class="num-r">分钟</view>
+      </view>
+      <view class="num num3">
+        <view class="num-l">{{num4}}</view>
+        <view class="num-r">秒</view>
+      </view>
+    </view>
+    <view class="past" style="justify-content:flex-end;font-size:32rpx;color:#f05050;" bindtap="deletePlan">删除计划</view>
+  </view>
+</view>

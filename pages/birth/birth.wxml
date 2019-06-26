@@ -1,0 +1,5 @@
+<!--birth.wxml-->
+<view class="container">
+  <view class="birth-desc">需要获取您的生日，仅用于展示相关信息。</view>
+  <datepicker bind:submit="submit" showDatePicker="{{showDatePicker}}"></datepicker>
+</view>

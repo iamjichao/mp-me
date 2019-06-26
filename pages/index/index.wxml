@@ -1,0 +1,77 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper class="swiper" indicator-dots duration="300" indicator-color="#ffed4c" indicator-active-color="#19aad1" bindchange="swiperChange">
+    <swiper-item class="swiper-item">
+      <view class="item-container">
+        <view class="userinfo">
+          <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+          <block wx:else> -->
+          <block>
+            <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+          </block>
+        </view>
+        <view class="past birth">
+          <image src="../../assets/birth.png"></image>
+          <text class="birth1">{{birthday}}</text>
+          <text class="birth2" bindtap="bindViewTap">修改生日</text>
+        </view>
+        <view class="past">今天是{{date}}</view>
+        <view class="past">农历{{lunarDate}}</view>
+        <view class="past">{{astro}}的我已经来到这个世界</view>
+        <view class="past-number">
+          <view class="num num1">
+            <view class="num-l">{{num1}}</view>
+            <view class="num-r">天</view>
+          </view>
+          <view class="num num2">
+            <view class="num-l">{{num2}}</view>
+            <view class="num-r">小时</view>
+          </view>
+          <view class="num num3">
+            <view class="num-l">{{num3}}</view>
+            <view class="num-r">分钟</view>
+          </view>
+          <view class="num num3">
+            <view class="num-l">{{num4}}</view>
+            <view class="num-r">秒</view>
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item class="swiper-item">
+      <view class="item-container">
+        <view class="progress">
+          <text>{{year}}年进度条</text>
+          <progress percent="{{percent}}" activeColor="#19aad1" show-info active stroke-width="20"></progress>
+        </view>
+        <view class="progress">
+          <text>{{lYear}}年农历进度条</text>
+          <progress percent="{{lPercent}}" activeColor="#ffed4c" show-info active stroke-width="20"></progress>
+        </view>
+        <!-- <view style="font-size:40rpx;color:#19aad1;margin-bottom:200rpx;text-align:center;" wx:if="{{isBirthday}}">
+          <image style="width:320rpx;height:320rpx;" src="../../assets/birthday.png"></image>
+          <view style="margin-bottom:20rpx;">每一个生日都是一个新的开始！</view>
+          <view>生日快乐！</view>
+        </view> -->
+        <view>
+          <view style="font-size:100rpx;font-weight:bolder;line-height:60rpx;color:#19aad1;margin-top:100rpx">“</view>
+          <view style="font-size:34rpx;color:#333;margin-bottom:200rpx;">{{sentence}}</view>
+        </view>
+      </view>
+    </swiper-item>
+    <!-- <swiper-item class="swiper-item">
+      <view class="item-container">
+        <view style="font-size:40rpx;color:#19aad1;margin-bottom:200rpx;text-align:center;" wx:if="{{isBirthday}}">
+          <image style="width:360rpx;height:360rpx;" src="../../assets/birthday.png"></image>
+          <view style="margin-bottom:20rpx;">每一个生日都是一个新的开始！</view>
+          <view>生日快乐！</view>
+        </view>
+        <view wx:else>
+          <view style="font-size:120rpx;font-weight:bolder;line-height:60rpx;color:#19aad1;">“</view>
+          <view style="font-size:40rpx;color:#333;margin-bottom:200rpx;">{{sentence}}</view>
+        </view>
+      </view>
+    </swiper-item> -->
+  </swiper>
+</view>

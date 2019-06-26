@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/list/list",
+    "pages/index/index",
+    "pages/birth/birth",
+    "pages/auth/auth",
+    "pages/addPlan/addPlan",
+    "pages/plan/plan"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#f9f7e8",
+    "navigationBarTitleText": "今天的我",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

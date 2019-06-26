@@ -1,0 +1,28 @@
+<!--addPlan.wxml-->
+<view class="container">
+  <form name="form" bindsubmit="addPlan">
+    <view class="form-item">
+      <view class="form-item-t">我的计划</view>
+      <view>
+        <input name="title" placeholder="必填，限20字以内" maxlength="20" bindinput="titleInput"></input>
+      </view>
+    </view>
+    <view class="form-item">
+      <view class="form-item-t">Deadline</view>
+      <view>
+        <picker name="deadline" mode="date" start="{{curDate}}" end="2100-12-31" value="{{deadline}}" bindchange="deadlineChange">
+          <view class="picker">{{deadline}}</view>
+        </picker>
+      </view>
+    </view>
+    <view class="form-item">
+      <view class="form-item-t">备注</view>
+      <view style="display:flex;">
+        <textarea name="remark" placeholder="选填"></textarea>
+      </view>
+    </view>
+    <view class="form-item">
+      <button disabled="{{buttonDisabled}}" formType="submit">添加计划</button>
+    </view>
+  </form>
+</view>

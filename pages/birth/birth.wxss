@@ -1,0 +1,19 @@
+/**birth.wxss**/
+page {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  padding: 0 40rpx;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.birth-desc {
+  font-size: 32rpx;
+  color: #333;
+  margin-bottom: 40rpx;
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "今天的我",
+  "disableScroll": false,
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#f9f7e8"
+}

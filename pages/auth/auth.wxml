@@ -1,0 +1,6 @@
+<!--auth.wxml-->
+<view class="container">
+  <view class="button-container">
+    <button hover-class="button-hover" open-type="getUserInfo" bindgetuserinfo="getUserInfo">开始使用</button>
+  </view>
+</view>

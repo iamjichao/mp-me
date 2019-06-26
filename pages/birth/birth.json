@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "选择生日",
+  "navigationBarBackgroundColor": "#ffffff",
+  "disableScroll": true,
+  "usingComponents": {
+    "datepicker": "/components/datepicker/datepicker"
+  }
+}

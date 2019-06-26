@@ -1,0 +1,59 @@
+/**plan.wxss**/
+page {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  padding: 0;
+}
+
+.item-container {
+  padding: 20rpx 40rpx;
+}
+
+.past {
+  font-size: 36rpx;
+  color: #333;
+  margin: 20rpx;
+  display: flex;
+  align-items: center;
+  /* text-align: right; */
+}
+
+.past image {
+  display: block;
+  width: 38rpx;
+  height: 38rpx;
+}
+
+.past text {
+  flex: 1;
+  margin-left: 18rpx;
+}
+
+.past-number {
+  background: #fff;
+  margin: 40rpx 0;
+  padding: 10rpx 0;
+  border-radius: 20rpx;
+  font-size: 60rpx;
+  color: #333;
+}
+
+.num {
+  display: flex;
+  margin: 40rpx 0;
+}
+
+.num-l {
+  flex: 1;
+  text-align: right;
+  margin-right: 20rpx;
+  color: #19aad1;
+  font-weight: bolder;
+}
+
+.num-r {
+  width: 180rpx;
+}
